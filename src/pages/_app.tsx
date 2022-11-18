@@ -4,7 +4,7 @@ import { DefaultSeo } from "next-seo";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
-import { publicProvider } from "wagmi/providers/public";
+import { alchemyProvider } from "wagmi/providers/alchemy";
 
 import defaultSEOConfig from "../../next-seo.config";
 import { Chakra } from "lib/components/Chakra";
@@ -15,7 +15,7 @@ import "@rainbow-me/rainbowkit/styles.css";
 
 const { chains, provider } = configureChains(
   [chain.goerli, chain.mainnet],
-  [publicProvider()]
+  [alchemyProvider({ apiKey: "2MMG2yEHbH1BM9qQry6bYUC_oTpG86Qh" })]
 );
 
 const { connectors } = getDefaultWallets({
