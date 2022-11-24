@@ -22,7 +22,7 @@ const Home = () => {
   const [isShowMine, setIsShowMine] = useState(false);
   const init = async () => {
     fetch(
-      `https://api.longxia.asia/collection/?size=8&anchorId=0&reverse=true`,
+      `https://cbe.fanmake.cloud/collection/?size=8&anchorId=0&reverse=true`,
       { method: "GET" }
     )
       .then((res) => res.json())

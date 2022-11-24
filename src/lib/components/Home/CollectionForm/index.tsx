@@ -141,7 +141,7 @@ export const CollectionForm = (props: FormProps) => {
 
     setValue(95);
     setStatus("Adding to collection");
-    fetch("https://api.longxia.asia/collection", {
+    fetch("https://cbe.fanmake.cloud/collection", {
       method: "POST",
       headers: {
         "content-type": "application/json",

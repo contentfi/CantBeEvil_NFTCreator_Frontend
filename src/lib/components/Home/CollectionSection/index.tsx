@@ -37,7 +37,7 @@ const CollectionSection = (props: CollectionSectionProps) => {
     // if (!address) return;
     // if (e.target.checked) {
     //   setIsLoading(true);
-    //   fetch(`https://api.longxia.asia/user/${address}/collection`, {
+    //   fetch(`https://cbe.fanmake.cloud/user/${address}/collection`, {
     //     method: "GET",
     //   })
     //     .then((res) => res.json())
@@ -51,7 +51,7 @@ const CollectionSection = (props: CollectionSectionProps) => {
     if (!address) return;
     if (isShowMine === true) {
       setIsLoading(true);
-      fetch(`https://api.longxia.asia/user/${address}/collection`, {
+      fetch(`https://cbe.fanmake.cloud/user/${address}/collection`, {
         method: "GET",
       })
         .then((res) => res.json())
@@ -64,7 +64,7 @@ const CollectionSection = (props: CollectionSectionProps) => {
   const onShowMoreClick = () => {
     setIsLoading(true);
     fetch(
-      `https://api.longxia.asia/collection/?size=8&anchorId=${anchorId}&reverse=true`,
+      `https://cbe.fanmake.cloud/collection/?size=8&anchorId=${anchorId}&reverse=true`,
       { method: "GET" }
     )
       .then((res) => res.json())
