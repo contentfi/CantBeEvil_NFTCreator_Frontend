@@ -48,10 +48,6 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
               content="website"
             />
             <meta
-              name="og:type"
-              content="website"
-            />
-            <meta
               name="og:url"
               content="https://cbe.tools"
             />
