@@ -11,7 +11,7 @@ const defaultSEOConfig = {
     images: [
       {
         url: "https://cbe.tools/45.jpg",
-        alt: "nextarter-chakra.sznm.dev og-image",
+        alt: "cbe og image",
       },
     ],
     site_name: "ContentFi",
