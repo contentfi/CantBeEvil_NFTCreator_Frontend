@@ -39,6 +39,16 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
               name="viewport"
               content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
             />
+            <meta
+              name="og:title"
+              content="CBE(Can't Be Evil) NFT Creator Tools"
+            />
+            <meta name="og:type" content="website" />
+            <meta name="og:url" content="https://cbe.tools" />
+            <meta
+              name="og:image"
+              content="https://i.ibb.co/g9jRQWY/Screenshot-2022-12-08-at-10-25-42.png"
+            />
           </Head>
           <DefaultSeo {...defaultSEOConfig} />
           <Layout>
